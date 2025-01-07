@@ -6,7 +6,7 @@ dbutils.fs.help()
 
 dbutils.fs.mount(source='wasbs://team4data@team4blobsa.blob.core.windows.net',
 mount_point='/mnt/blobstorage',
-extra_configs={'fs.azure.account.key.team4blobsa.blob.core.windows.net':'BaSvJwZj6IzRh4WaGVCoNpT5GDpEiZEf3078wmiIzvd2OrL6LT1hOqQURwysvHGchOkZ2NtH3fTy+AStAktxhg=='}
+extra_configs={'fs.azure.account.key.team4blobsa.blob.core.windows.net':'    '}
 )
 
 dbutils.fs.ls('/mnt/blobstorage')
@@ -381,7 +381,7 @@ spark_df.write.csv(output_blob_path, header=True, mode="overwrite")
 
 ## Create connections
 cosmosEndpoint = "https://team4docdb.documents.azure.com:443/"
-cosmosMasterKey = "DxDMC0n565yWUqqPGbtiMbgySbcmTLnB0YmAse7mCJmRiqMbbXxfQIoT6ezVPcVwQa8VtWWgG7C4ACDb88z1LA=="
+cosmosMasterKey = "  "
 cosmosDatabaseName = "Document DB"
 cosmosContainerName = "Container"
 ## Create a configuration 
@@ -538,7 +538,7 @@ edges.show()
 # Cosmos DB configuration
 config = {
     "spark.cosmos.accountEndpoint": "https://team4graphdb.documents.azure.com:443/",
-    "spark.cosmos.accountKey": "klRLLQqurEoH32EKV268cf0p0nuwniVYbM6i8Vw1F4mvzBDsnVTCB2AVGh4uY8pCAFEBhMuLjNlmACDbnGqIvg==",
+    "spark.cosmos.accountKey": "     ",
     "spark.cosmos.database": "Team4GraphDB",
     "spark.cosmos.container": "Graph1",  # This should be your graph container
 }
@@ -610,7 +610,7 @@ edges.count()
 # Cosmos DB configuration
 config1 = {
     "spark.cosmos.accountEndpoint": "https://team4graphdb.documents.azure.com:443/",
-    "spark.cosmos.accountKey": "klRLLQqurEoH32EKV268cf0p0nuwniVYbM6i8Vw1F4mvzBDsnVTCB2AVGh4uY8pCAFEBhMuLjNlmACDbnGqIvg==",
+    "spark.cosmos.accountKey": "  ",
     "spark.cosmos.database": "Team4GraphDB",
     "spark.cosmos.container": "Graph2",  # This should be your graph container
 }
